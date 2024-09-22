@@ -116,33 +116,33 @@ const About = () => {
                     </Text>
                 </Container1>
 
-                <Container2>
-                    <Title variant="h3">How Tech Talks is Different</Title>
-                    <Container3>
-                        <Container5>
-                            <div className={"bg-red-400"}>
-                                <Typography variant="h5">Other Blogging Sites</Typography>
-                                <ul>
-                                    <li>General content for a broad audience</li>
-                                    <li>Mixed quality of articles</li>
-                                    <li>Limited focus on technical depth</li>
-                                    <li>Infrequent updates on tech trends</li>
-                                </ul>
-                            </div>
-                        </Container5>
-                        <Container5>
-                            <Container4>
-                                <Typography variant="h5">Tech Talks</Typography>
-                                <ul>
-                                    <li>Tailored content for tech professionals and students</li>
-                                    <li>High-quality, expert-written articles</li>
-                                    <li>In-depth technical analysis and insights</li>
-                                    <li>Regular updates on the latest tech trends</li>
-                                </ul>
-                            </Container4>
-                        </Container5>
-                    </Container3>
-                </Container2>
+                {/*<Container2>*/}
+                {/*    <Title variant="h3">How Tech Talks is Different</Title>*/}
+                {/*    <Container3>*/}
+                {/*        <Container5>*/}
+                {/*            <div className={"bg-red-400"}>*/}
+                {/*                <Typography variant="h5">Other Blogging Sites</Typography>*/}
+                {/*                <ul>*/}
+                {/*                    <li>General content for a broad audience</li>*/}
+                {/*                    <li>Mixed quality of articles</li>*/}
+                {/*                    <li>Limited focus on technical depth</li>*/}
+                {/*                    <li>Infrequent updates on tech trends</li>*/}
+                {/*                </ul>*/}
+                {/*            </div>*/}
+                {/*        </Container5>*/}
+                {/*        <Container5>*/}
+                {/*            <Container4>*/}
+                {/*                <Typography variant="h5">Tech Talks</Typography>*/}
+                {/*                <ul>*/}
+                {/*                    <li>Tailored content for tech professionals and students</li>*/}
+                {/*                    <li>High-quality, expert-written articles</li>*/}
+                {/*                    <li>In-depth technical analysis and insights</li>*/}
+                {/*                    <li>Regular updates on the latest tech trends</li>*/}
+                {/*                </ul>*/}
+                {/*            </Container4>*/}
+                {/*        </Container5>*/}
+                {/*    </Container3>*/}
+                {/*</Container2>*/}
                 <Wrapper1>
                     <Text variant="h2">Ready to Dive in</Text>
                     <StyledButton component={Link} to="/">

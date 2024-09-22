@@ -12,7 +12,7 @@ const Container = styled(Box)`
     & > img, & > p {
         padding: 0 5px 5px 5px;
     }
-    background-color: #404041;
+    background-color: #1a1a1a;
 `;
 
 const Image = styled('img')({

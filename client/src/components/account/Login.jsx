@@ -10,7 +10,7 @@ const Component = styled(Box)`
     width: 400px;
     margin: auto;
     box-shadow: 5px 2px 5px 2px rgb(40 40 40 / 0.6);
-    background-color: #404041;
+    background-color: #1a1a1a;
     border-radius: 15px;
     
 `;
@@ -64,7 +64,15 @@ const Error = styled(Typography)`
 `
 
 const Input = styled(TextField)`
-    color: #fff;
+    & .MuiInputBase-input {
+        color: #fff;  // Changes the input text color to white
+    }
+    & .MuiInputLabel-root {
+        color: #fff;  // Changes the label text color to white
+    }
+    & .MuiInput-underline:before {
+        border-bottom-color: #fff;  // Changes the underline color to white
+    }
 `
 
 
