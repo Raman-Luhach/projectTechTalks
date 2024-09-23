@@ -3,11 +3,11 @@ import axios from 'axios';
 import { API_NOTIFICATION_MESSAGES, SERVICE_URLS } from '../constants/config';
 import { getAccessToken, getRefreshToken, setAccessToken, getType } from '../utils/common-utils';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://projecttechtalks.onrender.com';
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
-    timeout: 10000, 
+    timeout: 10000,
     headers: {
         "content-type": "application/json"
     }
@@ -61,7 +61,7 @@ const processResponse = (response) => {
 //////////////////////////////
 const ProcessError = async (error) => {
     if (error.response) {
-        // Request made and server responded with a status code 
+        // Request made and server responded with a status code
         // that falls out of the range of 2xx
         if (error.response?.status === 403) {
             // const { url, config } = error.response;
@@ -92,7 +92,7 @@ const ProcessError = async (error) => {
                 code: error.response.status
             }
         }
-    } else if (error.request) { 
+    } else if (error.request) {
         // The request was made but no response was received
         console.log("ERROR IN RESPONSE: ", error.toJSON());
         return {
@@ -100,7 +100,7 @@ const ProcessError = async (error) => {
             msg: API_NOTIFICATION_MESSAGES.requestFailure,
             code: ""
         }
-    } else { 
+    } else {
         // Something happened in setting up the request that triggered an Error
         console.log("ERROR IN RESPONSE: ", error.toJSON());
         return {
