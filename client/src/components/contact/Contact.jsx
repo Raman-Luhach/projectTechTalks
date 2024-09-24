@@ -3,11 +3,12 @@ import { Box, styled, Typography, Link } from '@mui/material';
 import { GitHub, Instagram, Email } from '@mui/icons-material';
 
 const Banner = styled(Box)`
-    background-image: url(http://mrtaba.ir/image/bg2.jpg);
+    background-image: url(https://as1.ftcdn.net/v2/jpg/02/12/64/94/1000_F_212649480_sILfiQOmORrK2l6ZbqCLh9nybhvP7Sfq.jpg);
     width: 100%;
     height: 50vh;
-    background-position: left 0px top -100px;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 `;
 
 const Wrapper = styled(Box)`

@@ -32,7 +32,7 @@ const Title = styled(Typography)`
 `;
 
 const Text = styled(Typography)`
-    color: black;
+    color: white;
     margin-top: 20px;
     line-height: 1.6;
 `;
@@ -53,7 +53,7 @@ const Container1 = styled(Box)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #f3f4f6;
+    background: #333333;
 `;
 
 const Container2 = styled(Box)`
@@ -97,7 +97,7 @@ const Wrapper1 = styled(Box)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #f3f4f6;
+    background: #CCCCCC;
 `
 
 const About = () => {
