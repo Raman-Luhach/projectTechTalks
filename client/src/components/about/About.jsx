@@ -2,7 +2,7 @@ import { Box, styled, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Banner = styled(Box)`
-    background-image: url(https://www.wallpapertip.com/wmimgs/23-236943_us-wallpaper-for-website.jpg);
+    background-image: url(https://img.freepik.com/premium-photo/black-workspace-top-view-wireless-keyboard-copy-space-black-leather-background-flat-lay_67155-19492.jpg);
     width: 100%;
     height: 99vh;
     background-position: center;

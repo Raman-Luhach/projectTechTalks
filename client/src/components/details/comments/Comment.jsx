@@ -1,8 +1,6 @@
 import { useContext } from "react";
-
 import { Typography, Box, styled } from "@mui/material";
 import { Delete } from '@mui/icons-material';
-
 import { API } from '../../../service/api';
 import { DataContext } from "../../../context/DataProvider";
 
@@ -33,24 +31,27 @@ const DeleteIcon = styled(Delete)`
 `;
 
 const Comment = ({ comment, setToggle }) => {
-
-    const { account } = useContext(DataContext)
+    const { account } = useContext(DataContext);
 
     const removeComment = async () => {
-       await API.deleteComment(comment._id);
-       setToggle(prev => !prev);
-    }
+        try {
+            await API.deleteComment(comment._id);
+            setToggle(prev => !prev);
+        } catch (error) {
+            console.error('Failed to delete comment:', error);
+        }
+    };
 
     return (
         <Component>
             <Container>
-                <Name>{comment.name}</Name>
-                <StyledDate>{new Date(comment.date).toDateString()}</StyledDate>
-                { comment.name === account.username && <DeleteIcon onClick={() => removeComment()} /> }
+                <Name>{comment?.name}</Name>
+                <StyledDate>{new Date(comment?.date).toDateString()}</StyledDate>
+                { comment?.name === account?.username && <DeleteIcon onClick={removeComment} /> }
             </Container>
-            <Typography>{comment.comments}</Typography>
+            <Typography>{comment?.comments}</Typography>
         </Component>
-    )
-}
+    );
+};
 
 export default Comment;
