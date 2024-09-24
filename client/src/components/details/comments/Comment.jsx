@@ -28,6 +28,9 @@ const StyledDate = styled(Typography)`
 
 const DeleteIcon = styled(Delete)`
     margin-left: auto;
+    &:hover {
+        cursor: pointer; 
+    }
 `;
 
 const Comment = ({ comment, setToggle }) => {
