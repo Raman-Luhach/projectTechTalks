@@ -1,6 +1,6 @@
 # Tech Talks
 
-![Tech Talks Logo](path-to-logo.png) <!-- Optional: Add a logo here -->
+
 
 **Tech Talks** is a modern blogging application that allows users to create, read, and interact with tech-related blogs. Built using React for the frontend, Node.js for the backend, and MongoDB for data storage, Tech Talks offers a smooth and interactive experience for tech enthusiasts.
 
