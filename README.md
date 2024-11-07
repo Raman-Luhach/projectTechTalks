@@ -31,4 +31,4 @@
 - **Database**: MongoDB
 - **Hosting**: Vercel for frontend, Render for backend
 
-## Project Structure
+
