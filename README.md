@@ -8,14 +8,7 @@
 - [Tech Talks](#tech-talks)
   - [Features](#features)
   - [Tech Stack](#tech-stack)
-  - [Project Structure](#project-structure)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-  - [Usage](#usage)
-  - [Screenshots](#screenshots)
-  - [Live Demo](#live-demo)
-  - [Contributing](#contributing)
-  - [License](#license)
+
 
 ## Features
 - User registration and authentication
